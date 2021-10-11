@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left_header">
+            <span id="outspan"><span id="inspan"></span></span>
+            <div class="heading">
+                <h3 style="color: #6A4BFF;">SYMP</h3>
+                <h3 style="color: #fff;">OSIUM</h3>
+            </div>
+        </div>
+        <div class="right_header">
+            <ion-icon name="menu-outline" id="menu"></ion-icon>
+            <ul id="links">
+                <ion-icon name="close" id="closes"></ion-icon>
+                <li id="home_link"><a href="#nav1">Home</a></li>
+                <li id="aboutus_link"><a href="#event">About</a></li>
+                <li id="speak"><a href="#nav3">Speakers</a></li>
+                <li id="sponsor_link"><a href="#nav4">Sponsor</a></li>
+                <li id="contact_link"><a href="#nav5">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main" style="z-index: 1;font-size: x-large;" id="nav1">
+        <div class="main_left" style="z-index: 1;">
+            <div class="red_circle" style="z-index: 0;"></div>
+            <div class="blue_circle" style="z-index: 0;"></div>
+            <div class="one" style="z-index: 1;">
+                <h1 style="color: #6A4BFF;" style="z-index: 1;font-weight: 200;">SYMPOSIUM</h1>
+                <h1 style="z-index: 1;font-weight: 200;">AI/ML</h1>
+            </div>
+            <div class="one" style="z-index: 1;">
+                <h5><ion-icon name="location-outline"></ion-icon><span style="font-weight:300;"> MS Teams</span></h5>
+                <h5><ion-icon name="calendar-clear-outline"></ion-icon><span style="font-weight: 300;"> Date,Time</span></h5>
+            </div>
+            <button style="z-index: 1;" id="home_btn">Register Now</button>
+        </div>
+        <div class="main_right">
+            <img src="mainimg.png">
+        </div>
+    </div>
+    <div class="aboutus">
+        <h1 id="event">ABOUT OUR EVENT</h1>
+        <div class="aboutusmain">
+            <div class="aboutuscontent">
+                
+            </div>
+        </div>
+    </div>
+    <div class="speakers" id="nav3">
+        <h1>SPEAKERS</h1>
+        <div class="left_bubble"></div>
+        <div class="main_speakers">
+            <div class="leftbtn" id="goleft">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="card" id="c1">
+                <img src="speaker_card.png" class="photo">
+                <hr class="odd">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="card" id="c2">
+                <img src="speaker_card.png" class="photo">
+                <hr class="even">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="card" id="c3">
+                <img src="speaker_card.png" class="photo">
+                <hr class="odd">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="card" id="c4">
+                <img src="speaker_card.png" class="photo">
+                <hr class="even">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="card" id="c5">
+                <img src="speaker_card.png" class="photo">
+                <hr class="odd">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                    <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="card" id="c6">
+                <img src="speaker_card.png"  class="photo">
+                <hr class="even">
+                <div class="card_main">
+                    <h3>Mr. Partha</h3>
+                <h4>AI Researcher at Amazon</h4>
+                <img src="logo.png" class="logo">
+                </div>
+            </div>
+            <div class="right_bubble"></div>
+            <div class="rightbtn" id="goright"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+        </div>
+    </div>
+    <div class="sponsor" id="nav4">
+        <h1>SPONSOR</h1>
+        <h2>Powered By</h2>
+        <img src="sponsor.png">
+    </div>
+    <div class="contact" id="nav5">
+        <h1 style="padding-top: 5vh;">CONTACT US</h1>
+        <div class="main_contact">
+            <div class="leftbtn2" id="goleft2">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="card1" id="d1" style="margin-right: 8vw;">
+                <img src="speaker_card.png" class="photo">
+                <hr class="odd">
+                <div class="card_main">
+                    <h3>Name</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.69);">Event Coordinator</h4>
+                    <h3>+919xxxxxxxxx</h3>
+                </div>
+            </div>
+            <div class="card1" id="d2">
+                <img src="speaker_card.png" class="photo">
+                <hr class="odd">
+                <div class="card_main">
+                    <h3>Name</h3>
+                    <h4 style="color: rgba(255, 255, 255, 0.69);">Event Coordinator</h4>
+                    <h3>+919xxxxxxxxx</h3>
+                </div>
+            </div>
+            <div class="rightbtn2" id="goright2"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+        </div>
+        <div class="connect">
+            <div class="main_connect">
+                <ion-icon name="logo-facebook" style="cursor: pointer;"></ion-icon>
+                <ion-icon name="logo-instagram" style="cursor: pointer;"></ion-icon>
+                <ion-icon name="mail-outline" style="cursor: pointer;"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>© Sigma Xi VIT 2021</h2>
+    </div>
+    <div class="form_full_page">
+        <div class="form_header">
+            <div class="left_header_form">
+                <span id="outspan"><span id="inspan"></span></span>
+                <div class="heading">
+                    <h3 style="color: #6A4BFF;">SYMP</h3>
+                    <h3 style="color: #fff;">OSIUM</h3>
+                </div>
+            </div>
+            <div class="middle_design"></div>
+            <div class="right_header_form">
+                <img src="sigma.png" >
+            </div>
+        </div>
+        <div class="main_form">
+            <div class="left_top_circle"></div>
+            <div class="left_main_form">
+                <img src="mainimg.png">
+            </div>
+            <div class="middle_design"></div>
+            <div class="right_main_form">
+                <div class="all_form">
+                    <h2 style="color: #12B0F3;text-align: center;">Register for Symposium</h2>
+                    <form action="#" id="register_form">
+                        <div class="two">
+                            <label for="registering_name">Name</label>
+                            <input type="text" id="registering_name">
+                        </div>
+                        <div class="two">
+                            <label for="registering_email">Email</label>
+                            <input type="email" id="registering_email">
+                        </div>
+                        <div class="two">
+                            <label for="registering_phone_num">Phone Number</label>
+                            <input type="tel" id="registering_phone_num">
+                        </div>
+                        <button id="register_now" class="hover1">Click here to register</button>
+                    </form>
+                </div>
+                <div class="all_success">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                    <h1 id="suc">Success</h1>
+                    <div class="paras" style="text-align: center;">
+                        <p id="woah">Woah, you have been successfully registered for Symposim.</p>
+                        <p id="upda">Join our Discord Server for further Updates</p>
+                    </div>
+                    <div class="three">
+                        <button id="discord_btn" onclick="showthank()">Join our discord Server</button>
+                        <button id="email_btn" onclick="showthank()">Want only email updates</button>
+                    </div>
+                </div>
+                <div class="thankyou">
+                    <h1>THANK YOU FOR REGISTERING</h1>
+                    <h2>Further Updates will be provided to you soon</h2>
+                    <button id="gobacktohome">Go back to Home</button>
+                </div>
+                <div class="right_bottom_circle"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

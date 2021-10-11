@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.right_header ul{
+    display: flex;
+    list-style: none;
+    width: 35vw;
+    justify-content: space-around;
+}
+
+.right_header ul li{
+    position: relative;
+}
+.right_header ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.current::after,.right_header ul li:hover::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #6A4BFF;
+    display: block;
+    margin: auto;
+    animation-name: xyz;
+    animation-duration: 1s;
+}
+@keyframes xyz{
+    from{width: 0%;}
+    to{width: 100%;}
+}
+body{
+    background-color: #1D2335;
+    overflow-x: hidden;
+}
+.main{
+    background-color: aqua;
+    display: flex;
+    background-color: #1D2335;
+    height: 90vh;
+    justify-content: space-around;
+    margin-bottom: 10vh;   
+    position: relative;
+    top: 15vh;
+}
+#event{
+    margin-top: 10vh;
+    -webkit-text-stroke: 1px #000; 
+    -webkit-background-clip: text;
+}
+.header{
+    width: 100vw;
+    display: flex;
+    background: #2F3750;
+    height: 15vh;
+    align-items: center;
+    border-radius: 0px 0px 50px 50px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+.left_header{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right_header{
+    flex-basis: 50%;
+}
+.main_left{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    flex-basis: 20%;
+    align-items: flex-start;
+    position: relative;
+}
+.blue_circle{
+    position: absolute;
+    background-color: #1D2335;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    right: -20vw;
+}
+.red_circle{
+    position: absolute;
+    background-color: #05D4F5;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    /* top : 1vh; */
+    /* bottom: 0; */
+    bottom: -40%;
+    left: -30%;
+}
+.main_right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_right img{
+    width: 25vw;
+    
+}
+.main_left button{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+    color: #fff;
+    background-color: #6A4BFF;
+    cursor: pointer;
+}
+.main_left button:hover{
+    color:#6A4BFF;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.main_left ion-icon{
+    color: #6A4BFF;
+}
+.aboutus{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.aboutusmain{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus h1{
+    color: #6A4BFF;
+    text-align: center;
+}
+.one h5{
+    padding: 5px 0px;
+}
+.aboutuscontent{
+    width: 50vw;
+    height: 50vh;
+    background: #19192C;
+    border-radius: 15px;
+}
+.speakers{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.speakers h1{
+    margin-top: 5vh;
+    color: #fff;
+    text-align: center;
+}
+.main_speakers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.card,.card1{
+    width: 20vw;
+    height: 65vh;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-right: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color: #2F3750;
+    color: #fff;
+}
+.card_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40%;
+}
+.photo{
+    width: 25vw;
+    /* height: 60%; */
+}
+.logo{
+    width: 25%;
+}
+
+.even{
+    background-color: #05D4F5;
+    width: 100%;
+    height: 5px;
+    border: 0;
+}
+.odd{
+    background-color: #6A4BFF;
+    width: 100%;
+    height: 5px;
+    border: 0;
+}
+
+.left_bubble{
+    background-color: rgba(106, 75, 255,0.2);
+    border-radius: 50%;
+    height: 58vw;
+    width: 58vw;
+    z-index: -10;
+    position: absolute;
+    top: -10%;
+    left: -25%;
+}
+#outspan{
+    /* margin-top: 100px; */
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #6A4BFF;
+}
+#inspan{
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    width: 30px;
+    height: 100%;
+    border-radius: inherit;
+}
+.heading{
+    display: flex;
+}
+.right_bubble{
+    background-color: #2F3750;
+    opacity: 0.5;
+    border-radius: 50%;
+    height: 58vw;
+    width: 58vw;
+    z-index: -10;
+    position: absolute;
+    bottom: -10%;
+    right: -25%;
+}
+.sponsor{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    margin-top: 8vh;
+}
+.sponsor img{
+    height: 40vh;
+    margin-bottom: 5vh;
+}
+.sponsor h1,.sponsor h2{
+    color: #fff;
+    text-align: center;
+}
+
+.contact{
+    background-color: #fff;
+}
+
+.contact h1{
+    /* background: #6A4BFF; */
+    color: #6A4BFF;
+    /* -webkit-text-stroke: 1px #000;  */
+    /* -webkit-background-clip: text; */
+    /* background-position: 0 0; */
+    text-align: center;
+}
+
+.connect{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0;
+}
+.main_connect{
+    margin-right: 3vw;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+.main_connect ion-icon{
+    font-size:xx-large;
+    color: #19192C;
+}
+.main_contact{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer{
+    height: 10vh;
+    background-color: #19192C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+.leftbtn,.rightbtn,.leftbtn2,.rightbtn2{
+    display: none;
+}
+
+#menu{
+    background-color: #6A4BFF;
+    color: #fff;
+    padding:2px;
+    cursor: pointer;
+    display:none;
+}
+#closes{
+    background-color: #6A4BFF;
+    color: #fff;
+    border-radius: 50%;
+    padding:2px;
+    cursor: pointer;
+    display:none;
+    align-self:flex-end;
+    margin-right: 5%;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent,#6A4BFF);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:linear-gradient(transparent,#05D4F5);
+}   
+
+.form_full_page{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    background-color: #1D2335;
+}
+.form_header{
+    flex-basis: 10%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.all_form{
+    margin-bottom: 20vh;
+}
+.right_bottom_circle{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    z-index: 50;
+    background: rgba(106, 75, 255, 0.2);
+    border-radius: 50%;
+    right: -15vw;
+    bottom: -15vw;
+}
+.middle_design{
+    flex-basis: 4%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(5, 212, 245, 0.8) 0%, rgba(106, 75, 255, 0.8) 20.31%, rgba(19, 147, 242, 0.8) 50.52%, rgba(45, 120, 255, 0.8) 69.27%, rgba(5, 212, 245, 0.8) 100%);
+    filter: blur(20px);
+}
+.left_header_form{
+    flex-basis: 48%;
+    background-color: transparent;
+    height: 100%;
+    padding-left: 3vw;
+}
+.right_header_form{
+    flex-basis: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.right_header_form img{
+    height: 10vh;
+    margin-right: 2vw;
+}
+.main_form{
+    display: flex;
+    height: 100%;
+}
+.left_main_form{
+    position: relative;
+    background-color: #1D2335;
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left_top_circle{
+    z-index: 50;
+    position: absolute;
+    top: -20vw;
+    left: -20vw;
+    width: 40vw;
+    height: 40vw;
+    background-color: #2F3750;
+    border-radius: 50%;
+}
+.left_main_form img{
+    width: 25vw;
+}
+.right_main_form{
+    position: relative;
+    flex-basis: 48%;
+    /* background-color: #1D2335; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#register_form{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#register_form button{
+    z-index: unset;
+    cursor: pointer;
+    border: 0;
+    background-color: #6A4BFF;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.all_success{
+    position: relative;
+    height: 45vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: #2F3750;
+    padding: 10px;
+    margin-bottom: 20vh;
+}
+#discord_btn{
+    border: 0;
+    color:#fff;
+    background-color: #13C39C;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+#email_btn{
+    border: 0;
+    color:#fff;
+    background-color: #6A4BFF;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+.all_success ion-icon{
+    font-size: 8vw;
+    background-color: #13C39C;
+    border-radius: 50%;
+    position: absolute;
+    top: -4vw;
+    border: 3px solid #25FFAE;
+}
+#suc{
+    padding-top: 4vw;
+}
+.thankyou{
+    height: 40vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.thankyou button{
+    border: 0;
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #6A4BFF;
+    padding: 10px 3vw;
+}
+
+@media(max-width:800px){
+    #c2,#c3,#c4,#c5,#c6,#d2{
+        display: none;
+    }
+    .aboutuscontent{
+        width: 80vw;
+        height: 40vh;
+    }
+    .aboutusmain{
+        height: 50vh;
+    }
+    .aboutus{
+        height: 70vh;
+    }
+    .card,.card1{
+        width: 50vw;
+        height: 40vh;
+        font-size: small;
+    }
+    .photo{
+        width: 55vw;
+    }
+    .leftbtn,.rightbtn,.leftbtn2,.rightbtn2{
+        display: unset;
+        cursor: pointer;
+        background-color: #6A4BFF;
+        color: #fff;
+        height: max-content;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .leftbtn ion-icon,.rightbtn ion-icon, .leftbtn2 ion-icon,.rightbtn2 ion-icon{
+        padding: 5px;
+        font-size: x-large;
+    }
+    .main_speakers{
+        align-items: center;
+        justify-content: space-around;
+    }
+    .left_bubble{
+        width: 53vw;
+        height: 53vw;
+        top:-25%;
+    }
+    .right_bubble{
+        width: 70vw;
+        height: 70vw;
+        right: -45%;
+    }
+    .main_contact
+    {
+        align-items: center;
+        justify-content: space-around;
+    }
+    .main_connect{
+        width: 70vw;
+        font-size: small;
+    }
+    .footer{
+        font-size: x-small;
+    }
+    #links{
+        background-color: #fff;
+        position: absolute;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60vh;
+        align-items: center;
+        display: none;
+        right: 5%;
+    }
+    #links li a{
+        color: #6A4BFF;
+    }
+    #links li::after{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .left_header{
+        flex-basis: 90%;
+        align-items: center;
+    }
+    .right_header{
+        flex-basis: 10%;
+        align-items: flex-end;
+    }
+    .main_left{
+        flex-basis: 50%;
+        height: 100%;
+        font-size:  small;
+        justify-content: center;
+    }
+    .main{
+        height: 40vh;
+    }
+    .main_right{    
+        flex-basis: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_left button{
+        transform: scale(0.9);
+    }
+    .main_right img{
+        transform: scale(1.5);
+    } 
+    .blue_circle{
+        height: 90vw;
+        width: 90vw;
+        left: -80%;
+        bottom: 7%;
+    }
+    .red_circle{
+        height: 90vw;
+        width: 90vw;
+        left: -70%;
+        bottom: 5%;
+    }
+    .header{
+        height: max-content;
+        border-radius: 0;
+    }
+    .left_header,.left_header{
+        padding: 5px 0;
+    }
+    .card,.card1{
+        height: max-content;
+    }
+    .card h3,.card h4,.logo,.odd,.even,.card1 h3,.card1 h4{
+        font-size: small;
+        text-align: center;
+        padding-bottom: 5px;
+    } 
+    .logo{
+        padding-bottom: 10px;
+    }
+    .main{
+        margin-bottom: 5vh;
+    }
+    .card1{
+        margin-right: 0 !important;
+    }
+    .right_header_form,.middle_design,.left_main_form,.left_top_circle,.right_bottom_circle{
+        display: none;
+    }
+    .right_header_form{
+        flex-basis: 100%;
+    }
+    .right_main_form{
+        /* flex-basis: 100%; */
+        background-color: transparent;
+    }
+    .main_form{
+        justify-content: center;
+        align-items: center;
+    }
+    .thankyou,.all_success,.all_form{
+        width: 90vw;
+        font-size: x-small;
+    }
+    .all_success,.all_form{
+        margin: 0;
+    }
+    .thankyou{
+        height: max-content;
+    }
+    .thankyou h1,.thankyou h2{
+        padding-bottom: 30px;
+    }
+    .left_header_form{
+        flex-basis: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .all_form{
+        width: max-content;
+        background-color: transparent;
+    }
+    #register_form button{
+        padding: 10px;
+    }
+    .form_header{
+        background-color: #2F3750;
+    }
+    .form_full_page{
+        background-color: #19192C;
+    }
+    #register_form{
+        background-color: transparent;
+    }
+    .all_success{
+        height: max-content;
+    }
+    .three{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #discord_btn,#email_btn{
+        width: max-content;
+        font-size: smaller;
+    }
+    .all_success ion-icon{
+        font-size: 20vw;
+    }
+    #suc{
+        padding-top: 20vw;
+        padding-bottom: 10px;
+    }
+    #woah{
+        padding-bottom: 5px;
+    }
+    #upda{
+        padding-bottom: 5px;
+    }
+}
